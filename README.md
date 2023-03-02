@@ -1,2 +1,2 @@
 # ApiGateway
-Implemented Spring Cloud API Gateway.
+Implemented Spring Cloud API Gateway
