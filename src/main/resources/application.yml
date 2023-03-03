@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: gateway
+
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_HOST}
