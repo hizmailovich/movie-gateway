@@ -11,14 +11,14 @@ public class GatewayConfig {
     @Bean
     RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("author_route",
-                        route -> route.path("/author/**")
+                .route("movie_route",
+                        route -> route.path("/movie/**")
                                 .filters(filter -> filter.stripPrefix(1))
-                                .uri("lb://author"))
-                .route("book_route",
-                        route -> route.path("/book/**")
+                                .uri("lb://movie"))
+                .route("review_route",
+                        route -> route.path("/review/**")
                                 .filters(filter -> filter.stripPrefix(1))
-                                .uri("lb://book"))
+                                .uri("lb://review"))
                 .build();
     }
 
